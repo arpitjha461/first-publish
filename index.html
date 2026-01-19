@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweet Delights</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff8f0;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #ff6f91, #ff9671);
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      padding: 80px 40px;
+      text-align: center;
+      background: url('https://images.unsplash.com/photo-1606312619070-d48b4c652a52') center/cover no-repeat;
+      color: white;
+    }
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .hero button {
+      background: #ff6f91;
+      border: none;
+      padding: 14px 30px;
+      font-size: 16px;
+      color: white;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+    .hero button:hover {
+      background: #ff4f7b;
+    }
+    .section {
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h3 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #ff6f91;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card .content {
+      padding: 20px;
+      text-align: center;
+    }
+    .card h4 {
+      margin: 10px 0;
+      font-size: 20px;
+    }
+    .card p {
+      font-size: 14px;
+      color: #666;
+    }
+    .price {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #ff6f91;
+    }
+    footer {
+      background: #333;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🍬 Sweet Delights</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Sweets</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Happiness in Every Bite</h2>
+    <p>Freshly made traditional & modern sweets for every occasion</p>
+    <button>Order Now</button>
+  </section>
+
+  <section class="section" id="products">
+    <h3>Our Popular Sweets</h3>
+    <div class="products">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b5" alt="Gulab Jamun">
+        <div class="content">
+          <h4>Gulab Jamun</h4>
+          <p>Soft, juicy and soaked in sugar syrup</p>
+          <div class="price">₹250 / kg</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1626078436898-39e28e6d9d7c" alt="Rasgulla">
+        <div class="content">
+          <h4>Rasgulla</h4>
+          <p>Spongy balls of happiness</p>
+          <div class="price">₹220 / kg</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1604908177522-0406b39f57ad" alt="Kaju Katli">
+        <div class="content">
+          <h4>Kaju Katli</h4>
+          <p>Premium cashew delight</p>
+          <div class="price">₹900 / kg</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Sweet Delights | Made with ❤️</p>
+  </footer>
+
+</body>
+</html>
